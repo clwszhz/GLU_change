@@ -1,0 +1,14 @@
+*.o
+*.a
+*.so
+*.pyc
+__pycache__/
+versions/*/src/lu_cmd
+versions/*/src/nicslu/demo/demop
+versions/*/src/nicslu/demo/demos
+versions/*/src/nicslu/demo/demop_time
+versions/*/src/nicslu/demo/demos_time
+versions/*/src/nicslu/demo/test
+results/
+x.dat
+timings.json

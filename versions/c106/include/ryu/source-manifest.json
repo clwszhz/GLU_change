@@ -1,0 +1,78 @@
+{
+  "repository": "https://github.com/ulfjack/ryu",
+  "commit": "4c0618b0e44f7ef027ebae05d2cc7812048f7c8f",
+  "files": [
+    {
+      "file": "ryu/d2fixed.c",
+      "url": "https://raw.githubusercontent.com/ulfjack/ryu/4c0618b0e44f7ef027ebae05d2cc7812048f7c8f/ryu/d2fixed.c",
+      "sha256": "78c56baef739197e1e3e395c0304c3f15ed5afbe4e01b3473a92c3cbc3eeb81b",
+      "bytes": 26321
+    },
+    {
+      "file": "ryu/d2s.c",
+      "url": "https://raw.githubusercontent.com/ulfjack/ryu/4c0618b0e44f7ef027ebae05d2cc7812048f7c8f/ryu/d2s.c",
+      "sha256": "d24323c7eb77d63f1e52c415212b50060b776f0883525d907d04954fcd48cf64",
+      "bytes": 17705
+    },
+    {
+      "file": "ryu/ryu.h",
+      "url": "https://raw.githubusercontent.com/ulfjack/ryu/4c0618b0e44f7ef027ebae05d2cc7812048f7c8f/ryu/ryu.h",
+      "sha256": "b7feab0ba1df5e9ef3d602f386592ad152491405e49b408fb21c0e0e9e6bfb16",
+      "bytes": 1360
+    },
+    {
+      "file": "ryu/common.h",
+      "url": "https://raw.githubusercontent.com/ulfjack/ryu/4c0618b0e44f7ef027ebae05d2cc7812048f7c8f/ryu/common.h",
+      "sha256": "0bbd71d26da6193e678d0776cf418f43f287c73d6fd6725353df0aadf70f2a19",
+      "bytes": 3648
+    },
+    {
+      "file": "ryu/digit_table.h",
+      "url": "https://raw.githubusercontent.com/ulfjack/ryu/4c0618b0e44f7ef027ebae05d2cc7812048f7c8f/ryu/digit_table.h",
+      "sha256": "8b782573abc0b8554d74163ae6c02f0beb5c30d1e63eaebdb0ddf2c98d817e01",
+      "bytes": 1745
+    },
+    {
+      "file": "ryu/d2s_intrinsics.h",
+      "url": "https://raw.githubusercontent.com/ulfjack/ryu/4c0618b0e44f7ef027ebae05d2cc7812048f7c8f/ryu/d2s_intrinsics.h",
+      "sha256": "1d05702f2edacce428223d4b43dd3095c1bd1f3ad30128ce1761d84356dddc7d",
+      "bytes": 13015
+    },
+    {
+      "file": "ryu/d2s_full_table.h",
+      "url": "https://raw.githubusercontent.com/ulfjack/ryu/4c0618b0e44f7ef027ebae05d2cc7812048f7c8f/ryu/d2s_full_table.h",
+      "sha256": "2618f6e5fae6c4443899b184efe3d08295dd267dc9f1a994c983c7caca59ebe6",
+      "bytes": 34501
+    },
+    {
+      "file": "ryu/d2s_small_table.h",
+      "url": "https://raw.githubusercontent.com/ulfjack/ryu/4c0618b0e44f7ef027ebae05d2cc7812048f7c8f/ryu/d2s_small_table.h",
+      "sha256": "54fec51f1c5eed786a8ce6de881b81582dd71f0812dcd4324b37396617bb0fa9",
+      "bytes": 7641
+    },
+    {
+      "file": "ryu/d2fixed_full_table.h",
+      "url": "https://raw.githubusercontent.com/ulfjack/ryu/4c0618b0e44f7ef027ebae05d2cc7812048f7c8f/ryu/d2fixed_full_table.h",
+      "sha256": "c505f1f21f5e4658196afd23df50f1ec4d048144095f73d92454705240a14547",
+      "bytes": 329074
+    },
+    {
+      "file": "LICENSE-Apache2",
+      "url": "https://raw.githubusercontent.com/ulfjack/ryu/4c0618b0e44f7ef027ebae05d2cc7812048f7c8f/LICENSE-Apache2",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357
+    },
+    {
+      "file": "LICENSE-Boost",
+      "url": "https://raw.githubusercontent.com/ulfjack/ryu/4c0618b0e44f7ef027ebae05d2cc7812048f7c8f/LICENSE-Boost",
+      "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+      "bytes": 1338
+    },
+    {
+      "file": "README.md",
+      "url": "https://raw.githubusercontent.com/ulfjack/ryu/4c0618b0e44f7ef027ebae05d2cc7812048f7c8f/README.md",
+      "sha256": "20572708ea26d19fd596f1c4a44097dbcb491cdf0517024d68bbb5d622d0ac93",
+      "bytes": 14930
+    }
+  ]
+}

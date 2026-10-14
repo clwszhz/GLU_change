@@ -1,0 +1,122 @@
+[
+  {
+    "id": "ASIC_100k_csr",
+    "n": 99340,
+    "nnz": 954163,
+    "matrix": "matrices/ASIC_100k_csr.mtx",
+    "reference": "references/ASIC_100k_csr.dat",
+    "matrix_sha256": "5a94865c8eb04b2c0eea2baa8843d2dc6dd04d6565cdb9c665442a87d2badc0a",
+    "reference_sha256": "8aedbf806ce635193769287fbecd90b6e8a276eed1f31cc04a1134b733ac4a9f",
+    "format": "one-based COO; first line is nrows ncols nnz; no symmetric expansion"
+  },
+  {
+    "id": "ASIC_100ks_csr",
+    "n": 99190,
+    "nnz": 578890,
+    "matrix": "matrices/ASIC_100ks_csr.mtx",
+    "reference": "references/ASIC_100ks_csr.dat",
+    "matrix_sha256": "3a15a4fc5a9cc85aa84d8c88ebe7611b94462a62a3337bb91548fc28d8246f1f",
+    "reference_sha256": "dafe566f4da53cfcd07cf292d4f40e1b858ce2e1609a0b89d273d498cc987916",
+    "format": "one-based COO; first line is nrows ncols nnz; no symmetric expansion"
+  },
+  {
+    "id": "ASIC_680ks_csr",
+    "n": 682712,
+    "nnz": 2329176,
+    "matrix": "matrices/ASIC_680ks_csr.mtx",
+    "reference": "references/ASIC_680ks_csr.dat",
+    "matrix_sha256": "72211df2a6bc254b38f3b9e3d1d8461ca8874bc8b4808c9984a5b4019f2b8a0f",
+    "reference_sha256": "0af5e982e9c4171838b9ca421fe490a206bc8d6f5c69477720aeaab3abbbfc02",
+    "format": "one-based COO; first line is nrows ncols nnz; no symmetric expansion"
+  },
+  {
+    "id": "G2_circuit_csr",
+    "n": 150102,
+    "nnz": 438388,
+    "matrix": "matrices/G2_circuit_csr.mtx",
+    "reference": "references/G2_circuit_csr.dat",
+    "matrix_sha256": "0f479d8773c764170f5c3558fcfe231a543e854eb46e80b472395a64a4cde69d",
+    "reference_sha256": "500a55b01707247a0b5f4a712b8577c8692a10deef10cdb1b3aa1d4e6ecc0df3",
+    "format": "one-based COO; first line is nrows ncols nnz; no symmetric expansion"
+  },
+  {
+    "id": "add32_csr",
+    "n": 4960,
+    "nnz": 23884,
+    "matrix": "matrices/add32_csr.mtx",
+    "reference": "references/add32_csr.dat",
+    "matrix_sha256": "36cc71c79c3cde2d1d679816e8e2ed954987180b54deee27562c06696686f140",
+    "reference_sha256": "3c6cebba114e2cb11a61177978a7f0b678e2ae0514c7787e2edc96fffb3370b3",
+    "format": "one-based COO; first line is nrows ncols nnz; no symmetric expansion"
+  },
+  {
+    "id": "bcircuit_csr",
+    "n": 68902,
+    "nnz": 375558,
+    "matrix": "matrices/bcircuit_csr.mtx",
+    "reference": "references/bcircuit_csr.dat",
+    "matrix_sha256": "357dc1e22589528790ec47f528248228cacb39022e49dc52c5dfbabc3c93c453",
+    "reference_sha256": "84931a8cd96df59d45fffde1bb60532504262154e93bb02893a435e9e9ee934e",
+    "format": "one-based COO; first line is nrows ncols nnz; no symmetric expansion"
+  },
+  {
+    "id": "dianwangmatrix1_csr",
+    "n": 16327,
+    "nnz": 75827,
+    "matrix": "matrices/dianwangmatrix1_csr.mtx",
+    "reference": "references/dianwangmatrix1_csr.dat",
+    "matrix_sha256": "cec084375d34eada12a977860571c15ac5b64178bd6bb52183f616f17ca41be6",
+    "reference_sha256": "f74a7464be7256751fcfa9d7a257688724bf739f862957b617036cea21ab4983",
+    "format": "one-based COO; first line is nrows ncols nnz; no symmetric expansion"
+  },
+  {
+    "id": "dianwangmatrix2_csr",
+    "n": 126905,
+    "nnz": 542895,
+    "matrix": "matrices/dianwangmatrix2_csr.mtx",
+    "reference": "references/dianwangmatrix2_csr.dat",
+    "matrix_sha256": "9d22c183790a781fb7cf681f7c746991fd2d892d87371837c5b034f0693afb95",
+    "reference_sha256": "abb29ea86aeacb70077a3c2731e9e4bc4c97cd61d901c000d9b247091f7d58aa",
+    "format": "one-based COO; first line is nrows ncols nnz; no symmetric expansion"
+  },
+  {
+    "id": "rajat13_csr",
+    "n": 7598,
+    "nnz": 48922,
+    "matrix": "matrices/rajat13_csr.mtx",
+    "reference": "references/rajat13_csr.dat",
+    "matrix_sha256": "bab1afeb48930ae2bf18c8a6492968d7e4c5319d1bd414e2181e113bba390fbd",
+    "reference_sha256": "53a0c305efdfd199f18e1b3b025bbbcb88b17c158d822a13a5e8bbcc5b4159d2",
+    "format": "one-based COO; first line is nrows ncols nnz; no symmetric expansion"
+  },
+  {
+    "id": "rajat26_csr",
+    "n": 51032,
+    "nnz": 249302,
+    "matrix": "matrices/rajat26_csr.mtx",
+    "reference": "references/rajat26_csr.dat",
+    "matrix_sha256": "e2425eedded384ba74bc2c09e2fe19504257954f3ed5693e23a9b0b635eea67d",
+    "reference_sha256": "725e0997df5f84062ab9d74a2f1a89c99375eb5e9db93544044d73ab5699ec6d",
+    "format": "one-based COO; first line is nrows ncols nnz; no symmetric expansion"
+  },
+  {
+    "id": "rajat27_csr",
+    "n": 20640,
+    "nnz": 99777,
+    "matrix": "matrices/rajat27_csr.mtx",
+    "reference": "references/rajat27_csr.dat",
+    "matrix_sha256": "f4f11f85a846f0aca2a4dafd9267d0e90de9e545ccf4c8243ad4e7f6a9c93fa5",
+    "reference_sha256": "7d7b37dca1c6ac0dd32c156458eba0f85d2fedab9cc3639ce326b00dbbb5f83c",
+    "format": "one-based COO; first line is nrows ncols nnz; no symmetric expansion"
+  },
+  {
+    "id": "twotone_csr",
+    "n": 120750,
+    "nnz": 1224224,
+    "matrix": "matrices/twotone_csr.mtx",
+    "reference": "references/twotone_csr.dat",
+    "matrix_sha256": "04f8ceb0f0f38a2e6d636a518b43eed4d63b68a133ce50a87bae1f5ed624e850",
+    "reference_sha256": "281621d9dfaca2cec620a23bb3b8f4e7f8741830b45dcc3ad6136ee851168818",
+    "format": "one-based COO; first line is nrows ncols nnz; no symmetric expansion"
+  }
+]
