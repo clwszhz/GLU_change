@@ -1764,13 +1764,13 @@
     },
     {
       "path": "matrices/G2_circuit_csr.mtx",
-      "sha256": "0f479d8773c764170f5c3558fcfe231a543e854eb46e80b472395a64a4cde69d",
-      "size": 12945743
+      "sha256": "1d7c3d1db40f5ca81c6c3f5d534f1468b9d968218adfdaa7db2c6c1a7bfbd88a",
+      "size": 21629708
     },
     {
       "path": "references/G2_circuit_csr.dat",
-      "sha256": "500a55b01707247a0b5f4a712b8577c8692a10deef10cdb1b3aa1d4e6ecc0df3",
-      "size": 3175949
+      "sha256": "12acabe89f294bb178c24d83fbc94737e8b54b4202a8d870a6ebda628156b5a5",
+      "size": 2847522
     },
     {
       "path": "matrices/add32_csr.mtx",
