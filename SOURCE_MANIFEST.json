@@ -3,7 +3,8 @@
     "glu-original": "glu-seed",
     "c94": "numeric12-20261013/seed-c94",
     "c104": "numeric12-20261013/numeric-c104",
-    "c106": "numeric12-20261013/numeric-c106"
+    "c106": "numeric12-20261013/numeric-c106",
+    "c120": "numeric10x-20261014/numeric-c120"
   },
   "files": [
     {
@@ -1850,6 +1851,458 @@
       "path": "references/twotone_csr.dat",
       "sha256": "281621d9dfaca2cec620a23bb3b8f4e7f8741830b45dcc3ad6136ee851168818",
       "size": 2293192
+    },
+    {
+      "path": "versions/c120/LICENSE.txt",
+      "sha256": "82c879cd9f07220c6e348bd6e1698d306e693891e61dfd68b7b177caacd8467e",
+      "size": 1551
+    },
+    {
+      "path": "versions/c120/include/Timer.h",
+      "sha256": "18abe253ca8bd1f79b2b9d40f3066e3ba01dde026e5b95af51648ad40a930c53",
+      "size": 2697
+    },
+    {
+      "path": "versions/c120/include/near_cached_core.h",
+      "sha256": "b2139341cb743ab39fb916cefd742d89ee5a7a13dfe7c085437f01efd2f4907d",
+      "size": 5976
+    },
+    {
+      "path": "versions/c120/include/numeric.h",
+      "sha256": "592c28f50b3814ab736b6117d5a34f2a5d38709f922fb803a841f5b95ca534eb",
+      "size": 207
+    },
+    {
+      "path": "versions/c120/include/phase_report.h",
+      "sha256": "f08ccb19a6dd37a4b173fae3152ae15f575443606dd9df9422f296b9e969c930",
+      "size": 1636
+    },
+    {
+      "path": "versions/c120/include/ryu/LICENSE-Apache2",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "size": 11357
+    },
+    {
+      "path": "versions/c120/include/ryu/LICENSE-Boost",
+      "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+      "size": 1338
+    },
+    {
+      "path": "versions/c120/include/ryu/common.h",
+      "sha256": "0bbd71d26da6193e678d0776cf418f43f287c73d6fd6725353df0aadf70f2a19",
+      "size": 3648
+    },
+    {
+      "path": "versions/c120/include/ryu/d2s_full_table.h",
+      "sha256": "2618f6e5fae6c4443899b184efe3d08295dd267dc9f1a994c983c7caca59ebe6",
+      "size": 34501
+    },
+    {
+      "path": "versions/c120/include/ryu/d2s_intrinsics.h",
+      "sha256": "1d05702f2edacce428223d4b43dd3095c1bd1f3ad30128ce1761d84356dddc7d",
+      "size": 13015
+    },
+    {
+      "path": "versions/c120/include/ryu/d2s_small_table.h",
+      "sha256": "54fec51f1c5eed786a8ce6de881b81582dd71f0812dcd4324b37396617bb0fa9",
+      "size": 7641
+    },
+    {
+      "path": "versions/c120/include/ryu/digit_table.h",
+      "sha256": "8b782573abc0b8554d74163ae6c02f0beb5c30d1e63eaebdb0ddf2c98d817e01",
+      "size": 1745
+    },
+    {
+      "path": "versions/c120/include/ryu/ryu.h",
+      "sha256": "b7feab0ba1df5e9ef3d602f386592ad152491405e49b408fb21c0e0e9e6bfb16",
+      "size": 1360
+    },
+    {
+      "path": "versions/c120/include/ryu/source-manifest.json",
+      "sha256": "f15fb3e3b08d3d2f87fee195c361e2e354a57f1f7a7f69a48f7787fec44c71df",
+      "size": 3366
+    },
+    {
+      "path": "versions/c120/include/symbolic.h",
+      "sha256": "abb6df5f8bc443f3b793b10b178f72b02e315671b656f1289341eb78b6dd11ec",
+      "size": 3509
+    },
+    {
+      "path": "versions/c120/include/type.h",
+      "sha256": "34304d9561b464add4cb9dc9977c2a89f30c2764f4c8dd28f97b52f2190a2789",
+      "size": 58
+    },
+    {
+      "path": "versions/c120/src/Makefile",
+      "sha256": "aa4b79c42105ddabf3f97b62c4ca9f1bee9f6b09fd5e01c2062af47cc6510e2f",
+      "size": 977
+    },
+    {
+      "path": "versions/c120/src/Timer.cpp",
+      "sha256": "e37368952e855718431e4b15554fefa579354710c9ea1d22a57087cd2c51e67b",
+      "size": 1912
+    },
+    {
+      "path": "versions/c120/src/glu_binding.cpp",
+      "sha256": "bf976a58f95ecf805e6b2ade884aac2671675c02d6a2a9da7e027be7aee3abf3",
+      "size": 6278
+    },
+    {
+      "path": "versions/c120/src/lu_cmd.cpp",
+      "sha256": "f08f9c016755dbbac665609caa47a080d2dc2c11ef48dabef8462686a4c65b10",
+      "size": 6074
+    },
+    {
+      "path": "versions/c120/src/nicslu/Makefile",
+      "sha256": "0c622a29d797e85ec5f5108355e4df36e8b14b1f641b04ada7f746068d3d6e57",
+      "size": 219
+    },
+    {
+      "path": "versions/c120/src/nicslu/demo/Makefile",
+      "sha256": "4032f0a8d97a8992d8c2ec8eae58b1322e97355bfa6d79d8d2ce43b3d41c1f2a",
+      "size": 974
+    },
+    {
+      "path": "versions/c120/src/nicslu/demo/demop.c",
+      "sha256": "57ced9ac868f08320ce40b56c860f1e778e9a352a9b870781ee1a0018f3786ee",
+      "size": 2310
+    },
+    {
+      "path": "versions/c120/src/nicslu/demo/demop_time.c",
+      "sha256": "383bf67289ab0f84b33599bce0a368b7c42d278f24ceebe1dc95c2f9ca87641d",
+      "size": 3142
+    },
+    {
+      "path": "versions/c120/src/nicslu/demo/demos.c",
+      "sha256": "13171c767b831488790c18d67efa38ec68dfcf7e1e444f6b0b924226de769548",
+      "size": 1837
+    },
+    {
+      "path": "versions/c120/src/nicslu/demo/demos_time.c",
+      "sha256": "29ee98200f0de6bd0e01e3d28ac6917920f2aad4c8da435c772686958f2af29f",
+      "size": 2764
+    },
+    {
+      "path": "versions/c120/src/nicslu/demo/test.c",
+      "sha256": "c23ed910207d7fea3b6e1a4d23ce73062942df5054830bd3330e72f98b896806",
+      "size": 15519
+    },
+    {
+      "path": "versions/c120/src/nicslu/include/nics_config.h",
+      "sha256": "7d78119d861166edf5d742ddd08c79b24e2062d540ab30ca5d6c6893e428bceb",
+      "size": 1814
+    },
+    {
+      "path": "versions/c120/src/nicslu/include/nicslu.h",
+      "sha256": "bc412ba73ca056130e47c3c64fdae39ae1d3fdeecf6a22e504104552def9d471",
+      "size": 9478
+    },
+    {
+      "path": "versions/c120/src/nicslu/lesser.txt",
+      "sha256": "5fff5ec2b15d117a8ebcd859783750b9cbfcf0bd2ed76ef91d34c78af2728cfd",
+      "size": 26035
+    },
+    {
+      "path": "versions/c120/src/nicslu/lib/Makefile",
+      "sha256": "ad357bcbf4d46dfec46fc20e29d78108b9c7180af85d6b366c7ba32e07b92c57",
+      "size": 983
+    },
+    {
+      "path": "versions/c120/src/nicslu/make.inc",
+      "sha256": "cb2890bbac57a354491876dbcf1cb2c1e7d269fd5d071e03cc66daf71a742043",
+      "size": 163
+    },
+    {
+      "path": "versions/c120/src/nicslu/readme.txt",
+      "sha256": "d796561c1f5bb6c3ab0570fc38eaae01da58115ffeeff9db2f28cf7e98ce0f2f",
+      "size": 2643
+    },
+    {
+      "path": "versions/c120/src/nicslu/source/math.h",
+      "sha256": "13b67a8c133ae1e7add98128392087a04aca7c49faede765d8a961e442f9152a",
+      "size": 858
+    },
+    {
+      "path": "versions/c120/src/nicslu/source/nics_config.h",
+      "sha256": "7d78119d861166edf5d742ddd08c79b24e2062d540ab30ca5d6c6893e428bceb",
+      "size": 1814
+    },
+    {
+      "path": "versions/c120/src/nicslu/source/nicslu.h",
+      "sha256": "bc412ba73ca056130e47c3c64fdae39ae1d3fdeecf6a22e504104552def9d471",
+      "size": 9478
+    },
+    {
+      "path": "versions/c120/src/nicslu/source/nicslu_aegraph.c",
+      "sha256": "b060c697af2bc9ac7255dffff7984b54d149b2469a1a433b8a73609bc50848e7",
+      "size": 1835
+    },
+    {
+      "path": "versions/c120/src/nicslu/source/nicslu_amd.c",
+      "sha256": "58854e7e6a01c5ad9ee86487387d4b68daaeb4b79f996f8024d4ceafb4ee8840",
+      "size": 15924
+    },
+    {
+      "path": "versions/c120/src/nicslu/source/nicslu_analyze.c",
+      "sha256": "73206d636dd6bc9975c0126f6e32d8a9e870681d3e9cd1c066762b11d2c6a750",
+      "size": 6719
+    },
+    {
+      "path": "versions/c120/src/nicslu/source/nicslu_check.c",
+      "sha256": "e3dfdac5bea0b4b1825721b751ddc3905a3ad3ead60cf202df77b7dd067e6928",
+      "size": 1404
+    },
+    {
+      "path": "versions/c120/src/nicslu/source/nicslu_cond.c",
+      "sha256": "d3de14d311ccdc2cb70e9afa62b75ea6a970ad0c02deb4a061ef058764d564b2",
+      "size": 2993
+    },
+    {
+      "path": "versions/c120/src/nicslu/source/nicslu_default.h",
+      "sha256": "ea09cb064b30cac65a5667a45874c20530457649fc69338db1f9778e7df6d45a",
+      "size": 410
+    },
+    {
+      "path": "versions/c120/src/nicslu/source/nicslu_destroy.c",
+      "sha256": "5e584d5c982817f342590b40e8f8c4a4e1f0e3c7efa32e551604820e65ca52cc",
+      "size": 550
+    },
+    {
+      "path": "versions/c120/src/nicslu/source/nicslu_dumpa.c",
+      "sha256": "918a07249d9d59c60410e25b6a38af7daacae3078d205ebb591651381ae1217f",
+      "size": 1612
+    },
+    {
+      "path": "versions/c120/src/nicslu/source/nicslu_dumplu.c",
+      "sha256": "922489183450391aeada05ddfc5e1ea3e19b95a376d703d8e04a348bdd1277ad",
+      "size": 2591
+    },
+    {
+      "path": "versions/c120/src/nicslu/source/nicslu_etree.c",
+      "sha256": "5941077404a872a7c54c6955a723b243d426e42237f42d6cffd0b6fa5cf6984c",
+      "size": 3163
+    },
+    {
+      "path": "versions/c120/src/nicslu/source/nicslu_flops.c",
+      "sha256": "f2a46a3f2ca162da5fa0d9339e3b54b77a0b6c906554c9e8f8c8c628d8f66863",
+      "size": 4446
+    },
+    {
+      "path": "versions/c120/src/nicslu/source/nicslu_global.c",
+      "sha256": "7fb6e147229c153bbbcaf328274e78840153bed2a6214c47f41aa75fec65894e",
+      "size": 252
+    },
+    {
+      "path": "versions/c120/src/nicslu/source/nicslu_initialize.c",
+      "sha256": "41f122c115eaf63ef472745344b23024d38780c6cec99739f872dfba39125636",
+      "size": 3075
+    },
+    {
+      "path": "versions/c120/src/nicslu/source/nicslu_internal.c",
+      "sha256": "c986265a76580fc13df8bf289a4b5d7bd5f0d6a4435ca61a4d2146ff3f12ddb6",
+      "size": 2400
+    },
+    {
+      "path": "versions/c120/src/nicslu/source/nicslu_internal.h",
+      "sha256": "3a59765e7ddcabab9cbb66f8146f6f8de360ecce76d4401ca1ef9c03d62ff5c9",
+      "size": 5641
+    },
+    {
+      "path": "versions/c120/src/nicslu/source/nicslu_kernel.c",
+      "sha256": "c14bb87d0d53cb412effad8a5ab8051372b6872078f631fec302d7ebee845bbd",
+      "size": 4817
+    },
+    {
+      "path": "versions/c120/src/nicslu/source/nicslu_kernel_fact.c",
+      "sha256": "862fa30d7e78dd5ab16ddbfe0cb8d7d825a2cabd8fb3b27c024d5a59442e32bc",
+      "size": 6809
+    },
+    {
+      "path": "versions/c120/src/nicslu/source/nicslu_kernel_fact_parallel.c",
+      "sha256": "e8b09abf59f7a135c30963ac84ed3d95462544ac8943ef1e1bb77eda09c7bde7",
+      "size": 21915
+    },
+    {
+      "path": "versions/c120/src/nicslu/source/nicslu_kernel_parallel.c",
+      "sha256": "7080a8affe47eed3089b1ee92c76e23f5f7f1eeccca79883f09a929a133732f7",
+      "size": 6401
+    },
+    {
+      "path": "versions/c120/src/nicslu/source/nicslu_matrix.c",
+      "sha256": "59130914dfd0c8b8790e443a0e40a3bfde5dde0aac350fd13ae3f488d404eea4",
+      "size": 5534
+    },
+    {
+      "path": "versions/c120/src/nicslu/source/nicslu_mc64.c",
+      "sha256": "68226c6e9e90b5258eb50856bc4d0391e8dc12aec904695422d65fbe62921163",
+      "size": 12530
+    },
+    {
+      "path": "versions/c120/src/nicslu/source/nicslu_mc64scale.c",
+      "sha256": "b949e55223bfd049c440b837b84ddae1d8c1c7d72fb43b84fff821cfbfd9b1d7",
+      "size": 1552
+    },
+    {
+      "path": "versions/c120/src/nicslu/source/nicslu_memuse.c",
+      "sha256": "2ce4d8ee1455af9b6fb0783716e7a0b8373f401afb26dfdf3996ec2a897603d3",
+      "size": 2259
+    },
+    {
+      "path": "versions/c120/src/nicslu/source/nicslu_mergedup.c",
+      "sha256": "e724d9f35eb4b3de6b2ae14d5f4a6da7d3eab197e9d0b8815b544f4d3b1e901c",
+      "size": 1705
+    },
+    {
+      "path": "versions/c120/src/nicslu/source/nicslu_refact.c",
+      "sha256": "758926e142a46ab83990f3443dd2e2141c71567cafe7212e5eecea16f8e78370",
+      "size": 3946
+    },
+    {
+      "path": "versions/c120/src/nicslu/source/nicslu_refact_parallel.c",
+      "sha256": "88ab64858157d1c02e142febba436fdc25984b6c3d9bb1fab5d420986d55c1ed",
+      "size": 12362
+    },
+    {
+      "path": "versions/c120/src/nicslu/source/nicslu_refine.c",
+      "sha256": "bc5086b5144625ff5eeffb221c59c57e5b77b4e8915838a57f9ae88d17e5e4f4",
+      "size": 1648
+    },
+    {
+      "path": "versions/c120/src/nicslu/source/nicslu_residual.c",
+      "sha256": "717f0ff608df76e2369a78d8c7e7df124fdaadfc6d5f7ae7b1691e1e8bdbdd2a",
+      "size": 3354
+    },
+    {
+      "path": "versions/c120/src/nicslu/source/nicslu_scale.c",
+      "sha256": "db472e6c964696e3e27af3cf33a199244c6bcb03f3c31a9c2bd214cc7405c72b",
+      "size": 1270
+    },
+    {
+      "path": "versions/c120/src/nicslu/source/nicslu_scheduler.c",
+      "sha256": "012b28fd5d8f877918bd054d98f9be9e318a88f66558146dad78dde14e039eb6",
+      "size": 2998
+    },
+    {
+      "path": "versions/c120/src/nicslu/source/nicslu_solve.c",
+      "sha256": "143e37efca1e8cf4a74a8eff3bfcc598fcd612c588c7487bff4a6c143ba7e29e",
+      "size": 8545
+    },
+    {
+      "path": "versions/c120/src/nicslu/source/nicslu_sort.c",
+      "sha256": "6019b32b76b62e3f85ebb31b441ec033087d7a7e3eca3957e7b311308071b1ec",
+      "size": 2533
+    },
+    {
+      "path": "versions/c120/src/nicslu/source/nicslu_static_symbolic.c",
+      "sha256": "fb0d41e8e51efc69b224062d29b6a07c64ada7a37e1da978e14cf8044d526513",
+      "size": 6541
+    },
+    {
+      "path": "versions/c120/src/nicslu/source/nicslu_thread.c",
+      "sha256": "eea6f02058380b081cb851f9a1197f3481213ed0da2a7b3ed3a5f3fc700b8405",
+      "size": 5614
+    },
+    {
+      "path": "versions/c120/src/nicslu/source/nicslu_thread_proc.c",
+      "sha256": "2e957004e87871e49edf0e1ead98ae9550c64f45c1cdba131d2e59fa6954d2bd",
+      "size": 1159
+    },
+    {
+      "path": "versions/c120/src/nicslu/source/nicslu_throughput.c",
+      "sha256": "d1682b78082cb344115fcd3d8d03a655e129f763c1f323f76c30c550015448a2",
+      "size": 1114
+    },
+    {
+      "path": "versions/c120/src/nicslu/source/nicslu_transpose.c",
+      "sha256": "ef8a0970006191da2d934fd62e70e765d0775b12eeaf1b6f786d5b5e54576cea",
+      "size": 1533
+    },
+    {
+      "path": "versions/c120/src/nicslu/source/system.c",
+      "sha256": "86fd2a56b17746531ca51b5bf3894e89ad19b55639b5ec3a93cb603b933152c0",
+      "size": 3621
+    },
+    {
+      "path": "versions/c120/src/nicslu/source/system.h",
+      "sha256": "5c6536e47c69160be019b7777b03f1177e4449baa34497892c4b07282e475d1e",
+      "size": 619
+    },
+    {
+      "path": "versions/c120/src/nicslu/source/thread.c",
+      "sha256": "dd66f71b3921a591ebd89f6005a84a5f9652c710930a886334ab9f845fc8300a",
+      "size": 9857
+    },
+    {
+      "path": "versions/c120/src/nicslu/source/thread.h",
+      "sha256": "8de558a43f17d77cdd3653d0c301f53332eb7670c7cceeb9c76885a06dcb4035",
+      "size": 3650
+    },
+    {
+      "path": "versions/c120/src/nicslu/source/timer_c.c",
+      "sha256": "40aae6dc2728c6c17fd55942a18ef962b60ed220238d7e85de0175d1f95138ad",
+      "size": 1715
+    },
+    {
+      "path": "versions/c120/src/nicslu/source/timer_c.h",
+      "sha256": "0ff2b87f163f97cf925e5dee8c85833bc328edbd048b73a84672b2dcc48d3702",
+      "size": 1090
+    },
+    {
+      "path": "versions/c120/src/nicslu/util/Makefile",
+      "sha256": "6721c52e974af810d5d2fd82ee6e09f86c2015b1d8a4ed354afacb2f6a996f0b",
+      "size": 271
+    },
+    {
+      "path": "versions/c120/src/nicslu/util/nicslu_readfile.c",
+      "sha256": "905d59715eb9adafba246807e9ef3f8382ecf8fdd378a7305a6b53f94ad44fb3",
+      "size": 6289
+    },
+    {
+      "path": "versions/c120/src/nicslu/util/nicslu_util.h",
+      "sha256": "d87f5b89f85f8f7bbf47f46a1852718701722dedc13822ec5f41b71f9dd03d58",
+      "size": 803
+    },
+    {
+      "path": "versions/c120/src/numeric.cu",
+      "sha256": "15f2544b473b90409969f6146bc4ec1dfda5477e7fb613960799532bd58b62a7",
+      "size": 95025
+    },
+    {
+      "path": "versions/c120/src/preprocess/Makefile",
+      "sha256": "c07db1761c5d21bee1c845133123628e26185e432f531cc99ce8c248e3ac3678",
+      "size": 189
+    },
+    {
+      "path": "versions/c120/src/preprocess/preprocess.c",
+      "sha256": "13d8a2f34769f813e3511520cf39c0e8f5952d990ee2cbb550860ce40fde834c",
+      "size": 5352
+    },
+    {
+      "path": "versions/c120/src/preprocess/preprocess.h",
+      "sha256": "708ebb6d5bb27ec481a020a3babc8b314e82149a85037528d2f0b419d5d23add",
+      "size": 937
+    },
+    {
+      "path": "versions/c120/src/preprocess/preprocess_arrays.c",
+      "sha256": "d37e8c2c3b2fac835a75467bbf151798ac88d11ea21efd6a6126efa083ca0623",
+      "size": 2875
+    },
+    {
+      "path": "versions/c120/src/ryu_d2s.cpp",
+      "sha256": "d24323c7eb77d63f1e52c415212b50060b776f0883525d907d04954fcd48cf64",
+      "size": 17705
+    },
+    {
+      "path": "versions/c120/src/symbolic.cc",
+      "sha256": "73abb5d2d9b52b2276a1f59ca2113fad8a37742e35e1a2ece53ee8c85e981cd5",
+      "size": 49830
     }
-  ]
+  ],
+  "provenance": {
+    "c120": {
+      "frozen_full_source_digest": "sha256:3e273529e7f749649bb3e0bb652f4533d17c70b941283ad592880dd14d691928",
+      "frozen_binary_sha256": "f00526959a5217643f9374f1dd2af2a844f9eff4404af14c4d5c083ac3d547da",
+      "packaging": "Source-only subset following the existing c106 layout; each packaged source file is byte-identical to frozen c120. Frozen binary is kept locally and ignored by Git."
+    }
+  }
 }

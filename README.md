@@ -8,12 +8,16 @@
 | `versions/c94` | c94 |
 | `versions/c104` | c104 |
 | `versions/c106` | c106，目标归并更新 |
+| `versions/c120` | c120，稀疏前缀与自适应稠密 Schur 后缀 |
 | `matrices` | 全部 12 个测试矩阵，包含 twotone |
 | `references` | 对应参考解，右端项为全 1 |
 
 各版本源码保持原样，未加入新的算法优化。旧编译产物不随包上传。
 这些版本此前在 Mars/HPCC 环境中测试；本包没有在 NVIDIA 上进行编译或运行验证。
 各版本及第三方依赖的许可证保留在各自目录内。
+
+c120 在原 Mars/HPCC 环境中，12 个公开矩阵、五套完整冻结复测的数值分解几何平均加速比为 **10.594385 倍**，相对每套重新运行的 GLU。
+这不是其他 GPU 的性能保证。机制、逐矩阵结果、原始正式计时样本和验证范围见 [c120 说明](docs/c120.md)及[结果数据](docs/c120-results.json)。
 
 ## 下载与编译
 
@@ -36,6 +40,12 @@ bash build.sh sm_80
 bash build.sh sm_80 glu-original c106
 ```
 
+只编译初始 GLU 和 c120：
+
+```bash
+bash build.sh sm_80 glu-original c120
+```
+
 如果 NVIDIA 编译或运行出现兼容问题，保留错误日志再处理，尤其注意 warp 宽度及同步。
 
 ## 测试
@@ -56,6 +66,13 @@ CUDA_VISIBLE_DEVICES=0 python3 compare.py
 
 ```bash
 CUDA_VISIBLE_DEVICES=0 python3 compare.py --versions glu-original c106
+```
+
+比较初始 GLU 和 c120（先小矩阵，再整套）：
+
+```bash
+CUDA_VISIBLE_DEVICES=0 python3 compare.py --versions glu-original c120 --matrices add32_csr --repeats 1
+CUDA_VISIBLE_DEVICES=0 python3 compare.py --versions glu-original c120
 ```
 
 结果保存在终端显示的 `results/日期时间/` 下：
