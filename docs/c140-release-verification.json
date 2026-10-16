@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "source_files_copied": 89,
+  "exported_sources_match_frozen": true,
+  "existing_source_and_data_files_unchanged": 458,
+  "original_hpcc_export_build": {
+    "status": "passed",
+    "binary_sha256": "5f360d31b45ff4e651da229c4700f83fcaa979bd33c49d52aa873fc7fd63b602",
+    "note": "Rebuilt from published source subset; binary hash need not match original frozen binary due build paths."
+  },
+  "comparison_cli_smoke": {
+    "status": "passed",
+    "matrix": "add32_csr",
+    "versions": [
+      "glu-original",
+      "c140"
+    ],
+    "warmups": 1,
+    "formal_repeats": 1,
+    "checked_vectors": 4,
+    "relative_l2_limit": 1e-06,
+    "purpose": "Functional packaging check, not new full12 timing evidence."
+  },
+  "nvidia_build_or_execution_validated": false,
+  "original_full12_evidence": "c140-results.json"
+}

@@ -14,7 +14,7 @@ import time
 import uuid
 
 ROOT = Path(__file__).resolve().parent
-VERSIONS = ['glu-original', 'c94', 'c104', 'c106', 'c120']
+VERSIONS = ['glu-original', 'c94', 'c104', 'c106', 'c120', 'c140']
 
 
 def factor_ms(report):
