@@ -1,0 +1,42 @@
+{
+  "id": "ASIC_100ks_csr",
+  "source": "/home/eda260712/workspace/PublicCase/GLU_public/src/matrix/ASIC_100ks_csr.mtx",
+  "source_sha256": "b7a864b7e77ea113de62c03e0dedd80366a1543e4259b860daaa0e44006d2d3a",
+  "input": "inputs/ASIC_100ks_csr.mtx",
+  "input_sha256": "3a15a4fc5a9cc85aa84d8c88ebe7611b94462a62a3337bb91548fc28d8246f1f",
+  "n": 99190,
+  "nnz": 578890,
+  "reference": "references/ASIC_100ks_csr.dat",
+  "reference_sha256": "dafe566f4da53cfcd07cf292d4f40e1b858ce2e1609a0b89d273d498cc987916",
+  "reference_run": {
+    "command": [
+      "/home/eda260712/workspace/case7-evaluator/klu_v1/build/source/klu_demo",
+      "/home/eda260712/workspace/PublicCase/GLU_public/src/matrix/ASIC_100ks_csr.mtx",
+      "/home/eda260712/workspace/case7-evaluator/klu_v1/.prepared-gxghyuse/references/ASIC_100ks_csr.dat"
+    ],
+    "returncode": 0,
+    "stderr": "n=99190 nnz=578890 ||Ax-b||2=2.013044e-09 ||b||2=3.149444e+02 status=0"
+  },
+  "reference_scaled_residual": 8.313679032154487e-22,
+  "matrix": "ASIC_100ks_csr",
+  "gpu": 0,
+  "binary_sha256": "f00526959a5217643f9374f1dd2af2a844f9eff4404af14c4d5c083ac3d547da",
+  "tracer": "/opt/hpcc-3.5.3/bin/hcTracer",
+  "evaluator_pins": {
+    "/home/eda260712/workspace/case7-evaluator/evaluate.py": "d36169e0c64b837a2e5a7e81879fa579ec3fab0f0ac7a24c98f1856944ae93f1",
+    "/home/eda260712/workspace/case7-evaluator/phase_timing.py": "599a022329be8f5df4487a3ec185cb0f0f5634e38b078d638064f4ed90055658",
+    "/home/eda260712/workspace/case7-evaluator/klu_v1/local_score.py": "5c7961da65875e01881d9e2f5af1489e5a9d4037aedf66ca058667043a46e75f"
+  },
+  "sequence": [
+    "warmup",
+    "plain-1",
+    "trace-1",
+    "trace-2",
+    "plain-2",
+    "plain-3",
+    "trace-3"
+  ],
+  "purpose": "Single-matrix diagnostic protocol validation; no formal speed ranking",
+  "input_policy": "Canonical stored coordinates; no symmetry expansion; b=ones; FP64",
+  "numeric_metric": "raw numeric_factorization milliseconds; no setup discount"
+}

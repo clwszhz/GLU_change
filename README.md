@@ -2,6 +2,8 @@
 
 用于在另一台 GPU 服务器上比较实际耗时和相对初始 GLU 的加速比。
 
+单矩阵 GPU 阶段诊断见 [c120 / ASIC_100ks 跨 GPU 测试规范](docs/profiling/c120-asic100ks/README.md)。目录包含 2026-10-17 的 Mars/hcTracer 对照结果、输入校验清单，以及可直接交给 NVIDIA 端会话的[执行提示词](docs/profiling/c120-asic100ks/PROMPT_NVIDIA.md)。
+
 | 目录 | 内容 |
 |---|---|
 | `versions/glu-original` | 初始 GLU 基线，包含阶段计时 |

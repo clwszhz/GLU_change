@@ -1,0 +1,314 @@
+{
+  "status": "completed",
+  "protocol_status": "accepted_for_single_matrix_diagnostics",
+  "candidate": "c120",
+  "matrix": "ASIC_100ks_csr",
+  "gpu": 0,
+  "gpu_model": "Mars X201",
+  "binary_sha256": "f00526959a5217643f9374f1dd2af2a844f9eff4404af14c4d5c083ac3d547da",
+  "input_sha256": "3a15a4fc5a9cc85aa84d8c88ebe7611b94462a62a3337bb91548fc28d8246f1f",
+  "repetitions": {
+    "warmup_plain": 1,
+    "plain": 3,
+    "traced": 3
+  },
+  "plain_numeric_samples_ms": [
+    45.37834699999985,
+    45.20490399999994,
+    45.260168999999905
+  ],
+  "traced_numeric_samples_ms": [
+    46.74393299999974,
+    46.771975000000566,
+    46.67903900000056
+  ],
+  "plain_numeric_mean_ms": 45.2811399999999,
+  "traced_numeric_mean_ms": 46.73164900000029,
+  "tracer_numeric_overhead_percent": 3.203340286928258,
+  "plain_numeric_stdev_ms": 0.08860279732035377,
+  "traced_numeric_stdev_ms": 0.04767019525857165,
+  "mean_device_union_ms": 44.991297,
+  "mean_uncovered_ms": 1.7403520000002881,
+  "mean_cross_stage_overlap_ms": 0.0,
+  "raw_trace_time_unit": "ns",
+  "exported_trace_time_unit": "us",
+  "kernel_count_per_numeric_window": 1565,
+  "vectors_checked": 7,
+  "correctness_passed": true,
+  "max_relative_l2": 4.9114634129687144e-15,
+  "max_scaled_residual": 1.0370455692705443e-21,
+  "protected_files_unchanged": true,
+  "stage_table": [
+    {
+      "stage": "source_prepare",
+      "label": "稀疏源列准备",
+      "mean_ms": 4.692366,
+      "percent_of_traced_numeric": 10.041088000125933,
+      "events_per_run": 643,
+      "kernel_names": [
+        "RL_cached_source_prepare",
+        "RL_batch_prepare"
+      ]
+    },
+    {
+      "stage": "sparse_update",
+      "label": "稀疏目标更新",
+      "mean_ms": 35.030495,
+      "percent_of_traced_numeric": 74.96096489126627,
+      "events_per_run": 655,
+      "kernel_names": [
+        "RL_update_tasks",
+        "RL_update_short_tasks"
+      ]
+    },
+    {
+      "stage": "fused_sparse",
+      "label": "源列准备＋更新融合内核",
+      "mean_ms": 1.0190533333333334,
+      "percent_of_traced_numeric": 2.1806492069931602,
+      "events_per_run": 4,
+      "kernel_names": [
+        "RL"
+      ]
+    },
+    {
+      "stage": "panel_diagonal",
+      "label": "panel 对角块 LU",
+      "mean_ms": 1.048603,
+      "percent_of_traced_numeric": 2.2438818711490223,
+      "events_per_run": 66,
+      "kernel_names": [
+        "dense_diagonal_shared"
+      ]
+    },
+    {
+      "stage": "panel_lower",
+      "label": "panel 下方 L21 求解",
+      "mean_ms": 1.5651523333333335,
+      "percent_of_traced_numeric": 3.349234120399483,
+      "events_per_run": 65,
+      "kernel_names": [
+        "dense_panel_lower_register"
+      ]
+    },
+    {
+      "stage": "panel_upper",
+      "label": "panel 右侧 U12 求解",
+      "mean_ms": 0.6412873333333333,
+      "percent_of_traced_numeric": 1.372276277546571,
+      "events_per_run": 65,
+      "kernel_names": [
+        "dense_panel_upper"
+      ]
+    },
+    {
+      "stage": "panel_update",
+      "label": "panel 剩余 A22 更新",
+      "mean_ms": 0.89578,
+      "percent_of_traced_numeric": 1.9168593858093785,
+      "events_per_run": 65,
+      "kernel_names": [
+        "dense_panel_update"
+      ]
+    },
+    {
+      "stage": "pack_unpack",
+      "label": "稀疏／稠密打包与写回",
+      "mean_ms": 0.044970666666666666,
+      "percent_of_traced_numeric": 0.09623171368651337,
+      "events_per_run": 2,
+      "kernel_names": [
+        "dense_tail_pack",
+        "dense_tail_unpack"
+      ]
+    },
+    {
+      "stage": "device_aux",
+      "label": "GPU 清零与状态回传",
+      "mean_ms": 0.05358933333333333,
+      "percent_of_traced_numeric": 0.11467460378582618,
+      "events_per_run": 2,
+      "kernel_names": []
+    }
+  ],
+  "traces": [
+    {
+      "label": "trace-1",
+      "numeric_ms": 46.74393299999974,
+      "device_union_ms": 44.968428,
+      "uncovered_ms": 1.7755049999997397,
+      "cross_stage_overlap_ms": 0.0,
+      "stage_union_ms": {
+        "source_prepare": 4.685445,
+        "sparse_update": 35.000545,
+        "fused_sparse": 1.022059,
+        "panel_diagonal": 1.045708,
+        "panel_lower": 1.567476,
+        "panel_upper": 0.64167,
+        "panel_update": 0.896469,
+        "pack_unpack": 0.045312,
+        "device_aux": 0.063744
+      },
+      "stage_counts": {
+        "source_prepare": 643,
+        "sparse_update": 655,
+        "device_aux": 2,
+        "pack_unpack": 2,
+        "fused_sparse": 4,
+        "panel_diagonal": 66,
+        "panel_lower": 65,
+        "panel_upper": 65,
+        "panel_update": 65
+      },
+      "kernel_counts": {
+        "RL_cached_source_prepare": 90,
+        "RL_update_tasks": 642,
+        "dense_tail_pack": 1,
+        "dense_tail_unpack": 1,
+        "RL": 4,
+        "RL_update_short_tasks": 13,
+        "RL_batch_prepare": 553,
+        "dense_diagonal_shared": 66,
+        "dense_panel_lower_register": 65,
+        "dense_panel_upper": 65,
+        "dense_panel_update": 65
+      },
+      "kernel_union_ms": {
+        "RL_cached_source_prepare": 0.749692,
+        "RL_update_tasks": 34.089206,
+        "dense_tail_pack": 0.018432,
+        "dense_tail_unpack": 0.02688,
+        "RL": 1.022059,
+        "RL_update_short_tasks": 0.911339,
+        "RL_batch_prepare": 3.935753,
+        "dense_diagonal_shared": 1.045708,
+        "dense_panel_lower_register": 1.567476,
+        "dense_panel_upper": 0.64167,
+        "dense_panel_update": 0.896469
+      },
+      "boundary_clipped_records": 0,
+      "untimed_native_records": 0
+    },
+    {
+      "label": "trace-2",
+      "numeric_ms": 46.771975000000566,
+      "device_union_ms": 45.088165,
+      "uncovered_ms": 1.6838100000005696,
+      "cross_stage_overlap_ms": 0.0,
+      "stage_union_ms": {
+        "source_prepare": 4.686329,
+        "sparse_update": 35.135101,
+        "fused_sparse": 1.018406,
+        "panel_diagonal": 1.046375,
+        "panel_lower": 1.560543,
+        "panel_upper": 0.640879,
+        "panel_update": 0.897876,
+        "pack_unpack": 0.045056,
+        "device_aux": 0.0576
+      },
+      "stage_counts": {
+        "source_prepare": 643,
+        "sparse_update": 655,
+        "device_aux": 2,
+        "pack_unpack": 2,
+        "fused_sparse": 4,
+        "panel_diagonal": 66,
+        "panel_lower": 65,
+        "panel_upper": 65,
+        "panel_update": 65
+      },
+      "kernel_counts": {
+        "RL_cached_source_prepare": 90,
+        "RL_update_tasks": 642,
+        "dense_tail_pack": 1,
+        "dense_tail_unpack": 1,
+        "RL": 4,
+        "RL_update_short_tasks": 13,
+        "RL_batch_prepare": 553,
+        "dense_diagonal_shared": 66,
+        "dense_panel_lower_register": 65,
+        "dense_panel_upper": 65,
+        "dense_panel_update": 65
+      },
+      "kernel_union_ms": {
+        "RL_cached_source_prepare": 0.753427,
+        "RL_update_tasks": 34.214327,
+        "dense_tail_pack": 0.018944,
+        "dense_tail_unpack": 0.026112,
+        "RL": 1.018406,
+        "RL_update_short_tasks": 0.920774,
+        "RL_batch_prepare": 3.932902,
+        "dense_diagonal_shared": 1.046375,
+        "dense_panel_lower_register": 1.560543,
+        "dense_panel_upper": 0.640879,
+        "dense_panel_update": 0.897876
+      },
+      "boundary_clipped_records": 0,
+      "untimed_native_records": 0
+    },
+    {
+      "label": "trace-3",
+      "numeric_ms": 46.67903900000056,
+      "device_union_ms": 44.917298,
+      "uncovered_ms": 1.761741000000555,
+      "cross_stage_overlap_ms": 0.0,
+      "stage_union_ms": {
+        "source_prepare": 4.705324,
+        "sparse_update": 34.955839,
+        "fused_sparse": 1.016695,
+        "panel_diagonal": 1.053726,
+        "panel_lower": 1.567438,
+        "panel_upper": 0.641313,
+        "panel_update": 0.892995,
+        "pack_unpack": 0.044544,
+        "device_aux": 0.039424
+      },
+      "stage_counts": {
+        "source_prepare": 643,
+        "sparse_update": 655,
+        "device_aux": 2,
+        "pack_unpack": 2,
+        "fused_sparse": 4,
+        "panel_diagonal": 66,
+        "panel_lower": 65,
+        "panel_upper": 65,
+        "panel_update": 65
+      },
+      "kernel_counts": {
+        "RL_cached_source_prepare": 90,
+        "RL_update_tasks": 642,
+        "dense_tail_pack": 1,
+        "dense_tail_unpack": 1,
+        "RL": 4,
+        "RL_update_short_tasks": 13,
+        "RL_batch_prepare": 553,
+        "dense_diagonal_shared": 66,
+        "dense_panel_lower_register": 65,
+        "dense_panel_upper": 65,
+        "dense_panel_update": 65
+      },
+      "kernel_union_ms": {
+        "RL_cached_source_prepare": 0.758056,
+        "RL_update_tasks": 34.043935,
+        "dense_tail_pack": 0.018688,
+        "dense_tail_unpack": 0.025856,
+        "RL": 1.016695,
+        "RL_update_short_tasks": 0.911904,
+        "RL_batch_prepare": 3.947268,
+        "dense_diagonal_shared": 1.053726,
+        "dense_panel_lower_register": 1.567438,
+        "dense_panel_upper": 0.641313,
+        "dense_panel_update": 0.892995
+      },
+      "boundary_clipped_records": 0,
+      "untimed_native_records": 0
+    }
+  ],
+  "scope": "Original synchronized numeric_factorization window only; raw ms, no 0.005 weight; no final CPU triangular solve",
+  "limitations": [
+    "Diagnostic repetitions do not replace the formal evaluator.",
+    "Uncovered intervals are not automatically CPU time or proof of GPU idleness.",
+    "Fused kernels cannot be split into internal substeps from this trace.",
+    "Stage unions may overlap on other cases; global union is the additive coverage measure."
+  ]
+}
